@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Cadastrar</servlet-name>
+        <servlet-class>controller.Cadastrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastrarSala</servlet-name>
+        <servlet-class>controller.CadastrarSala</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cadastrarmedico</servlet-name>
+        <servlet-class>controller.Cadastrarmedico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cadastrarcirurgia</servlet-name>
+        <servlet-class>controller.Cadastrarcirurgia</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastrar</servlet-name>
+        <url-pattern>/Cadastrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastrarSala</servlet-name>
+        <url-pattern>/CadastrarSala</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cadastrarmedico</servlet-name>
+        <url-pattern>/Cadastrarmedico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cadastrarcirurgia</servlet-name>
+        <url-pattern>/Cadastrarcirurgia</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
